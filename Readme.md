@@ -11,9 +11,9 @@ Turning off the native parser causes the problem to disappear.
 - `node server.js`
 - In another terminal: `ab -n 10000 -c 4 http://127.0.0.1:3000/`
 - Check the number of docs in the collection, in a mongo shell: 
-    use test
-    db.cluster_test.count()
+    `use test`
+    `db.cluster_test.count()`
 - Should be far less than 10k documents.
 
 
-- Turn off the native parser in app.js and try again, should be 10k documents.
+Turn off the native parser in app.js and try again, should be 10k documents.
