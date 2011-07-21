@@ -1,4 +1,4 @@
-There seems to be a bug when using cluster in combination with node-mongodb-native's native BSON parser.
+There seems to be a bug when using [cluster](https://github.com/learnboost/cluster) in combination with [node-mongodb-native](https://github.com/christkv/node-mongodb-native)'s native BSON parser.
 
 Only about half of the attempted inserts actually show up in the db, I suspect that object ids are being reused.
 
