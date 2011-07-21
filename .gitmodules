@@ -1,0 +1,3 @@
+[submodule "node-mongodb-native"]
+	path = node-mongodb-native
+	url = https://github.com/christkv/node-mongodb-native.git
