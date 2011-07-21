@@ -7,7 +7,10 @@ Turning off the native parser causes the problem to disappear.
 ##To reproduce:
 
 - `git clone git://github.com/koudelka/mongo_native_parser_bug.git`
+- `cd mongo_native_parser_bug`
+- `git submodule init`
 - `git submodule update`
+- `cd node-mongodb-native && make && cd ..`
 - `node server.js`
 - In another terminal: `ab -n 10000 -c 4 http://127.0.0.1:3000/`
 - Check the number of docs in the collection, in a mongo shell: 

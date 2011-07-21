@@ -11,7 +11,7 @@ mongo_connection = new mongodb.Db(
         27017,
         {}
       ),
-      {native_parser:false}
+      {native_parser:true}
     )
 
 mongo_connection.open(function(){
