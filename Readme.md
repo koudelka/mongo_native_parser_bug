@@ -6,7 +6,7 @@ Turning off the native parser causes the problem to disappear.
 
 ##To reproduce:
 
-- `git clone https://koudelka@github.com/koudelka/mongo_native_parser_bug.git`
+- `git clone git://github.com/koudelka/mongo_native_parser_bug.git`
 - `git submodule update`
 - `node server.js`
 - In another terminal: `ab -n 10000 -c 4 http://127.0.0.1:3000/`
